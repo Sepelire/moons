@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: #1a1a1a;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.moon-container-1 {
+  display: flex;
+  gap: 10px;
+}
+
+.moon-container-2 {
+  display: flex;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.moon-container-3 {
+  display: flex;
+  gap: 10px;
+}
+
+.moon-phase-1 {
+  padding: 0;
+  margin: 10px;
+  font-size: 40px;
+  cursor: pointer;
+  transition: filter 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%;
+}
+
+.moon-phase-2 {
+  padding: 0;
+  margin: 10px;
+  font-size: 40px;
+  cursor: pointer;
+  transition: filter 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%;
+}
+
+.moon-phase-3 {
+  padding: 0;
+  margin: 10px;
+  font-size: 40px;
+  cursor: pointer;
+  transition: filter 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%;
+}
+
+.moon-phase-1:not(.desaturated) {
+  box-shadow: 0 0 15px 5px orange;
+}
+
+.moon-phase-2:not(.desaturated) {
+  box-shadow: 0 0 15px 5px rgb(1, 191, 255);
+}
+
+.moon-phase-3:not(.desaturated) {
+  box-shadow: 0 0 15px 5px purple;
+}
+
+.moon-phase-1.desaturated {
+  filter: grayscale(100%);
+  box-shadow: none;
+}
+
+.moon-phase-2.desaturated {
+  filter: grayscale(100%);
+  box-shadow: none;
+}
+
+.moon-phase-3.desaturated {
+  filter: grayscale(100%);
+  box-shadow: none;
+}
